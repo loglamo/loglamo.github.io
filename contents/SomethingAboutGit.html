@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <!-- Theme style  -->
+    <style>
+        .banner {
+            position: relative;
+  left: 50%;
+  display: block;
+  margin: 100px -200px;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #0489B1;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #000000;
+  background: #0489B1;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+      				0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner::before,
+.banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -70px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #0B4C5F;
+  border-right: 20px solid #0B4C5F;
+  border-bottom-color: #0B4C5F;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner::after {
+  left: auto;
+  right: -70px;
+  border-left: 20px solid #0B4C5F;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+.paragrapp {
+   position: center;
+   left: 100px;
+   right: 100px;
+}
+.textp {
+    font-family: Arial;
+    font-size: 15px;
+}
+.img {
+    position: center;
+    width: 100px;
+}
+    </style>
+	</head>
+    <body style="background: #ffffff; font-family: Arial;">
+        <h1 class="banner">Something about Git</h1>
+        <hr>
+        <div class="paragrapp">
+            <h2 style="color: teal;">Git</h2>
+            <p class="textp">This is a distributed sourcecode management tool. It means that it helps you manage, update, store your sourcecode</p>
+            <h3 style="font-family: Arial;font-size: 20px;">Basics of Git</h3>
+            <ul class="textp">
+                <li>Git uses "Repository(repo)" to store all about your source code (your project): code, modify management,...Two types of repo: Local and Remote. You can store your project in local. If you want to store for safety or share others to joint work, you can push your project to Remote repo. </li>
+                <li>Some websites for Git: <a href="https://lab.github.com/githubtraining/introduction-to-github">Github</a> , <a href="https://docs.gitlab.com/ee/intro/">GitLab</a>,.etc. </li>
+              </ul>
+        </div>
+        <div>
+            <center><img style="width: 200px; height: 200px;" src="../images/github.png" alt="github"><img style="width: 200px; height: 200px;" src="../images/gitlab.png" alt="gitlab"></center>
+        </div>
+        <div>
+            <h3 style="font-family: Arial;font-size: 20px;">Work with Github</h3>
+            <ol>
+                <li>Install: The first step you have to do is installing git in your computer so that you can use Git commands in your computer. You also have to create an account in github website so that it is like your remote repo.</li>
+                <li>Basics of Github workflow: Clone Project(clone the project in remote to your computer so that you can modify the project as you want) -> Modify Project as you want -> Git add (add things you modified into temporary memory) -> Git commit (Changes to your local repository) -> Git push (push your changes to remote repository). </li>
+                <li>More details at <a href="https://lab.github.com/githubtraining/introduction-to-github">Github workflow</a></li>you can find the architecture of github there, basic commands of git.
+                <li>Git have two main types of users: Master, and distributors. Master is the man who created the repository in the remote. distributors are the men who wanted to modify something in the project of the master. </li>
+                <li>Basically, you should remember: git pull- git add- git commit- git push (update modifies- add your modifies to the stage- push to remote repository)</li>
+                <li>Other commands are git fork, git pull request, git merge,...This <a href="https://education.github.com/git-cheat-sheet-education.pdf">Cheat Sheet</a> may help you.</li>
+              </ol>  
+        </div>
+        
+            
+        <h3 style="font-family: Arial;font-size: 20px;">Git commands figure:</h3>
+        <center><img style="width: 600px;" src="../images/gitcommand.jpg"></center>
+           
+        <br>
+        <br>
+    <hr>
+    <div>
+        <h4 style="color: teal;"><i>Dont think that Git is something hard, something important to talk about. You should think that it is just a tool to manage your sourcecode, projects and you can work with it everyday, can be good at it soon.</i></h4>
+    </div>
+    <footer style="height: 60px;">
+    </footer>
+        
+	
+    </body>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <!-- Theme style  -->
+    <style>
+        .banner {
+            position: relative;
+  left: 50%;
+  display: block;
+  margin: 100px -200px;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #0489B1;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #000000;
+  background: #0489B1;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+      				0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner::before,
+.banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -70px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #0B4C5F;
+  border-right: 20px solid #0B4C5F;
+  border-bottom-color: #0B4C5F;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner::after {
+  left: auto;
+  right: -70px;
+  border-left: 20px solid #0B4C5F;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+.paragrapp {
+   position: center;
+   left: 100px;
+   right: 100px;
+}
+.textp {
+    font-family: Arial;
+    font-size: 15px;
+}
+.img {
+    position: center;
+    width: 100px;
+}
+    </style>
+	</head>
+    <body style="background: #ffffff; font-family: Arial;">
+        <h1 class="banner">Introduction of Linux</h1>
+        <hr>
+        <div class="paragrapp">
+            <h2 style="color: teal;">Linux</h2>
+            <p class="textp">This is type of opensource operating systems with Linux core created by Linus Torvald. After many years of development, there are lots of versions of Linux (Distro called too) such as Ubuntu, Fedora, Debian, Kali,etc. </p>
+            <h3 style="font-family: Arial;font-size: 20px;">The reasons for using Linux</h3>
+            <ul class="textp">
+                <li>About copyright and cost: Linux is an opensource operating system, so users can use it free or cheap fee</li>
+                <li>This is a flexible operating system: Users can modify, fix as long as possibly; besides, Linux can be compatible with lots of environments such as servers, desktops, embeded systems</li>
+                <li>High security:Linux has a access permission rule system to every type of users. The root has the highest access permission in system. Other users have limited access permission. When the operating system has some bugs, they can be fixed by big community of Linux users. </li>
+              </ul>
+        </div>
+            <h3 style="font-family: Arial;font-size: 20px;">Standard of the system hierarchy</h3>
+            <p class="textp">Folder system in Linux is structured as the hierarchical tree. The highest folder is the root folder, as "/". All other folders are below the root folder. These folders are important system folders.</p>
+            <center><img src="../images/folderlinux.png" alt="folder system"></center>
+            <h3 style="font-family: Arial;font-size: 20px;">Terminal</h3>
+            <p class="textp">Linux has a wonderful command line tool. It is like cmd in windows.</p>
+            <p class="textp">It support helpful, clear commands that are really friendly to users. You use "Ctrl+Alt+T" to open a new terminal or find terminal in find tool.</p>
+            <p class="textp">Honestly, i love Linux than windows, because of its Terminal and the system hierarchy. When i have to return to use Windows, i feel like "Dull", sorry.=)).</p>
+            <p class="textp">The below picture is the interface of Ubuntu 16.04 and its find tool</p>
+            <center><img src="../images/terminal.png" alt="folder system"></center>
+        <hr>
+        <div>
+            <h4 style="color: teal;"><i>Try Linux, you may love it like me do.</i></h4>
+        </div>
+        <br>
+        <br>
+        
+	
+    </body>
