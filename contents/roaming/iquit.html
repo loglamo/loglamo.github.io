@@ -1,0 +1,206 @@
+<head>
+    <style>
+        body { margin:0px; padding:0px; }
+
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
+.header-banner {
+    background-color: #333;
+    background-image: url('../../images/wall1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+header h1 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    postion: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
+}
+
+/* demo content */
+body { 
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content{ 
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+.banner {
+            position: relative;
+  left: 50%;
+  display: block;
+  margin: 100px -200px;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #0489B1;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #000000;
+  background: #0489B1;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+      				0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner::before,
+.banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -70px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #0B4C5F;
+  border-right: 20px solid #0B4C5F;
+  border-bottom-color: #0B4C5F;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner::after {
+  left: auto;
+  right: -70px;
+  border-left: 20px solid #0B4C5F;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<header>
+    <div class="header-banner">
+        <h1>SKT of Spring 2019, I Quit here, Sorry</h1>
+    </div>
+    <div class="clear"></div>
+    <nav>
+        <div class="site-title">Finland</div>
+        <ul>
+            <li><a href="../../index.html">About me</a></li>
+            <li><a href="../../index.html">Contact</a></li>
+        <ul>
+    </nav>
+</header>
+     
+<section class="content">
+    <article>
+    <p>
+    "The team with the best players, but nothing we gained together. What's wrong with you? with me? I'm so sorry, i should go out of your world."
+    </p>  
+    <p>
+        
+    </p>
+    <hr>
+    <p>
+
+    </p>
+    
+    </article>
+        
+    <aside>
+        <img width="250px" height="250px" src="../../images/Larlia-logo.png">
+    </aside>
+    
+</section> 
+<footer>
+    <div>
+        <img width="100%" height="550px" src="../../images/wall_quit_0.jpg">
+    </div>
+
+</footer>
+
+<script src="../../js/blogitem.js"></script>
+
+  
