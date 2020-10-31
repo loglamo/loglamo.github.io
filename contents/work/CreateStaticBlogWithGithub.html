@@ -1,0 +1,244 @@
+<head>
+    <style>
+        body { margin:0px; padding:0px; }
+
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
+.header-banner {
+    background-color: #333;
+    background-image: url('../../images/blogcreate-github.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+header h1 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    postion: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
+}
+
+/* demo content */
+body { 
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content{ 
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+.banner {
+            position: relative;
+  left: 50%;
+  display: block;
+  margin: 100px -200px;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #0489B1;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #000000;
+  background: #0489B1;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+      				0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner::before,
+.banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -70px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #0B4C5F;
+  border-right: 20px solid #0B4C5F;
+  border-bottom-color: #0B4C5F;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner::after {
+  left: auto;
+  right: -70px;
+  border-left: 20px solid #0B4C5F;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<header>
+    <div class="header-banner">
+        <h1>Create a static blog with Github</h1>
+    </div>
+    <div class="clear"></div>
+    <nav>
+        <div class="site-title">Finland</div>
+        <ul>
+            <li><a href="../../index.html">About me</a></li>
+            <li><a href="../../index.html">Contact</a></li>
+        <ul>
+    </nav>
+</header>
+     
+<section class="content">
+    <article>
+        <ol>
+            <strong style="font-size: 30px;"><li>Static web page and dynamic web page: </li></strong>
+            In communication between web browser(client) and web server(server), the most common protocol used in is HTTP. This protocol allows the browser sends an HTTP request to the server, and then the server sends an HTTP response to the browser. Two main type of response sent to browser are Static web page and Dynamic web page. There are some differences between both of them. They are related to: 
+            <ul>
+                <li>
+                    To Static page, Information and data are static. They will not change until someone changes them. On the otherhand, data in Dynamic page can be changed or rendered continuously.
+                </li>
+                <li>
+                    Language used: To Static page, languages used are simple languages such as HTML, JavaScript, CSS. To Dynamic, they are more complex languages/ techniques such as AJAX, ASP,... 
+                </li>
+                <li>
+                    Time for rendering data: Because of simplexity, Static page takes less time to load/render page than Dynamic page 
+                </li>
+                <li>
+                    Database: Usually, Static page has no involvement of database while Dynamic page needs database for management, storage and other advanced functions.
+                </li>
+        
+            </ul>
+            According to your aiming, you can choose which type of web page you want. For example, If you want your web page has the linking to the users (users can login, can comment,...), you should choose Dynamic page. If you just want to make a blog to talk about something you love to share with others, you can choose static. As for me, i just want to make a profile and story writing so i choose Static page. There are a lots of tools supporting you make a website that does not need you build big website project (Frontend + Backend).
+            <strong style="font-size: 30px;"><li>Github and other blog generation tools:</li></strong>
+            This article compared 10 best free website builders in 2020 <a href="https://www.websitebuilderexpert.com/website-builders/free/">Link</a>. You can hear about WordPress or Wix several times. They are popular and famous builders. Others are Jimdo, IM Creator, Mozello,etc. These builders are different in Storage capacity, Security, Products for free. You can choose one of them according to your aiming. For example, WordPress is good at Blog, Wix is good at website, you want to make a website for selling something, you can choose Wix. Exactly, if your requirements are big, it can not be free as they said =))). Usually, to big company, they want high security level, they want to be free with their data, they are rich =)), they choose to create a website on their own by hiring a team for creating front-end, back-end, and buying their own servers or  hiring servers on the Cloud. 
+            Maybe, everyone in engineering is familiar with Git - Tool for version and source code management. Github is one of famous corporations for Git. They also support you to make a website on their architecture. This tool is suitable and quick for IT men who want to make a website on their own. 
+            If your blog or website has important data, Github and 3rd builders can be not for you. 
+            <strong style="font-size: 30px;"><li>Main steps:</li></strong>
+            You can find basic steps in document of Github in <a href="https://guides.github.com/features/pages/">Getting started with Github pages</a>. They are: 
+            <ul>
+                <li>You have to have a Github account. It is easy to sign up for you.</li>
+                <li>
+                    Create repository and configure something: Sign in and click "New repository" like this:
+                    <img src="../../images/githubblog1.PNG" style="width: 100%;height: 50%;"> 
+                   Give a special name to your website as the rule [username.github.io], with username is your github user name, for example my website name is "loglamo.github.io", this will be like a link to your website, and your repository also exists a repo "username.github.io". You can modify something in this repository. 
+                   <img src="../../images/githubblog2.PNG" style="width: 100%;height: 50%;"> 
+                   Nextly, you can choose some theme you want in Github recommendation by clicking "Settings" and choosing a theme.
+                   <img src="../../images/githubblog3.PNG" style="width: 100%;height: 50%;"> 
+                   <img src="../../images/githubblog4.PNG" style="width: 100%;height: 50%;"> 
+                   And you can choose theme like this: 
+                   <img src="../../images/githubblog5.PNG" style="width: 100%;height: 50%;"> 
+                   Basically, configuration is done. You can modify code as you want. I think if you have some knowledge of software developers, it will be better and faster for you to begin.
+                   You can modify code in online Github like this: 
+                   <img src="../../images/githubblog6.PNG" style="width: 100%;height: 50%;"> 
+                   Index file is the important file in your project. You can modify something in it and see changes. Remember to commit changes after your modifying, then your webpage is changed. 
+                   To developers, they will code offline at their IDE(Visual Studio Code, Sublime Text, Atom,...) to be easy to debug, then commit code to Github.
+                   You can use the theme from Github or HTML+CSS templates from opensource web. I used <a href="https://colorlib.com/wp/blog-website-templates/">Colorlib</a> for my webpage. It will be easy for you to modify source code from templates. However, it can be more difficult if you are new bee in web coding. You have to know about how folder structure are? for example there will be css, javascript, fonts, contents folder and index.html file as the main file to run your web page. This is simple page. To complex websites, folder structures are more complex according to your techniques you use in. 
+                   You can create your logo as your style by using Photoshop. I used <a href="https://www.canva.com/">Canva</a> to create my logo. You can use it via web or app, but i dont like to download and set up with Windows, i use web. =)). 
+                </li>
+            </ul>
+          </ol>
+          Try it!!!
+        
+    </article>
+        
+    <aside>
+        <img width="250px" height="250px" src="../../images/Larlia-logo.png">
+    </aside>
+    
+</section> 
+<footer>
+    <div>
+        <img width="100%" height="450px" src="../../images/createblog-github-foot.jpg">
+    </div>
+
+</footer>
+
+<script src="../../js/blogitem.js"></script>
+
+  
