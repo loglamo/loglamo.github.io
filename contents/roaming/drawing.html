@@ -1,0 +1,109 @@
+<head>
+    <style>
+    /*============== CREDITS:=============
+          Based on a Pen by Orhan
+  "CSS3 Stamp effect using radial gradients"
+    https://codepen.io/orhanveli/pen/tbGJL 
+           Images from Unsplash
+======================================*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;}
+
+body {
+  font-family: courier new;
+  background:#E6E0F8;
+	padding: 100px;
+  height: 100vh;
+	text-align: center;
+  padding: 0 5vw;
+}
+
+h1 {
+  padding: 1em;
+}
+
+div.stamp-sheet {
+  max-width: 1320px;
+  min-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stamp {
+	width: 230px;
+	height: 270px;
+	padding: 10px;
+  position: relative;
+	background: white;
+	background: radial-gradient(
+		transparent 4px, 
+		white 4px
+	);
+  background-size: 20px 20px;
+	background-position: -10px -10px;
+  transition: ease-in-out 300ms;
+  will-change: transform;
+}
+
+div.stamp::before {
+  content: "LA";
+  color: white;
+  font-size: 24px;
+  position: absolute;
+	left: 26px;
+  bottom: 24px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.8), 0px 0px 2px rgba(0,0,0,0.8);
+}
+
+div.stamp::after {
+  content: "><";
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 24px;
+  font-size: 66px;
+  text-shadow: 0px 0px 5px rgba(0,0,0,0.8),
+    0px 0px 2px rgba(0,0,0,0.8);
+}
+
+
+.stamp:last-child {
+  transform: rotate(7deg);
+  transform-origin: bottom left
+}
+
+.stamp:hover {
+  z-index: 1;
+  transform: rotate(3deg);
+  transform-origin: center;
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,0.3));
+  transition: ease-in-out 300ms;
+}
+</style>
+</head>
+<body>
+<h1>
+    My Drawing
+</h1>
+<div class="stamp-sheet">
+  <div class="stamp">
+    <img scr="">
+  </div>
+  <div class="stamp">
+    <img style="width: 220px;height: 250px;" src="../../images/image-draw1.jpg">
+  </div>
+  <div class="stamp">
+    <img style="width: 220px;height: 250px;" src="../../images/image-draw2.jpg">
+  </div>
+  <div class="stamp">
+    <img style="width: 220px;height: 250px;" src="../../images/image-draw3.jpg">
+  </div>
+  <div class="stamp torn">
+    <img style="width: 220px;height: 250px;" src="../../images/image-draw4.jpg">
+  </div>
+</div>
+</body>
