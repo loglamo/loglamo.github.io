@@ -1,4 +1,217 @@
-Sau khi đã xem 1 trong các bộ phim chuyển thể được xếp vào hàng kinh điển “Cánh buồm đỏ thắm", t nghĩ đến việc đọc lại nó, và thật là không 1 phút hối tiếc.
-Có vẻ như câu chuyện rất hợp với t, t như sống trong thế giới hão huyền, mộng mơ đó. Một con bé tên Axon (quyển sách của t phiên âm thế, một số bản dịch khác sẽ phiên âm khác) mất mẹ sống cùng cha. Mặc mọi lời gièm pha của dân làng chài nơi bố con Axon sống, mặc cuộc sống dẫu có khó khăn, người cha vẫn dành cho con gái nhỏ những tình cảm đẹp nhất. Ông ấy làm ra những con thuyền đẹp đẽ, chính 1 trong những con thuyền với cánh buồm đỏ thắm đã dẫn Axon có cuộc gặp mặt với ông lão chu du thiên hạ kể những câu chuyện cổ tích. Ông lão đã nói rằng Axon sẽ gặp được người đàn ông của đời mình trên chiếc thuyền đỏ thắm, con bé đã tin. Người cha hẳn cũng tin tưởng, mong muốn con gái gặp được cái định mệnh đó. Cô bé lớn lên luôn ôm ấp hình cảnh con thuyền đó. Axon tin vào những câu chuyện tình có hậu, tin vào tình yêu đích thực, tin vào cái gọi là duyên phận, định mệnh. Và rồi năm tháng qua đi, người ta nghĩ Axon bị làm sao đấy khi quá mộng mơ, còn cô vẫn là cô. Rồi định mệnh đã đến khi người ta có niềm tin. Người thuyền trưởng ấy đã gặp Axon, và anh cũng tin rằng mình chính là nửa kia người đem lại hạnh phúc cho cô gái. Trong thầm lặng, anh chuẩn bị con thuyền của mình với những cánh buồm đỏ thắm, tới đón Axon trong sự bàng hoàng của người dân chốn làng chài. Họ là định mệnh, là tình đầu và cũng là tình cuối của nhau. Great!
-T nghĩ chính t cũng ảo tưởng như thế, nên t ms hợp với câu chuyện như vậy. Đúng là ko hổ danh thuộc hàng văn học kinh điển.
-Next: Kiêu hãnh và định kiến, thuyết phục - Jane Austen
+
+<head>
+    <style>
+        body { margin:0px; padding:0px; }
+
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
+.header-banner {
+    background-color: #333;
+    background-image: url('../../images/canhbuomdotham.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+header h1 {
+    background-color: rgba(18,72,120, 0.8);
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #292f36;
+    postion: fixed;
+    z-index: 10;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul { 
+    list-style-type: none;
+    margin: 0 2% auto 0;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li { 
+    display: inline-block; 
+    line-height: 60px;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none; 
+    color: #a9abae;
+}
+
+/* demo content */
+body { 
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content{ 
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+.banner {
+            position: relative;
+  left: 50%;
+  display: block;
+  margin: 100px -200px;
+  width: 400px;
+  height: 60px;
+  border: 1px solid #0489B1;
+  font: normal 30px/60px 'Rye';
+  text-align: center;
+  color: #000000;
+  background: #0489B1;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset,
+      				0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner::before,
+.banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -70px;
+  top: 24px;
+  display: block;
+  width: 40px;
+  height: 0px;
+  border: 30px solid #0B4C5F;
+  border-right: 20px solid #0B4C5F;
+  border-bottom-color: #0B4C5F;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner::after {
+  left: auto;
+  right: -70px;
+  border-left: 20px solid #0B4C5F;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+@media only screen and (max-width: 960px) {
+    .content{ 
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {  
+        margin-bottom: 3rem;
+    }
+    aside {  
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+    </style>
+</head>
+
+<header>
+    <div class="header-banner">
+        <h1>Scarlet Sails - Alexander Grin 
+        </h1>
+        <div>      
+        </div>
+               
+    </div>
+    
+    <nav>
+        <div class="site-title">Finland</div>
+        <ul>
+            <li><a href="../../index.html">About me</a></li>
+            <li><a href="../../index.html">Contact</a></li>
+        <ul>
+    </nav>
+</header>
+     
+<section class="content">
+    <article>
+        <div style="font-family: cursive; font-size: medium; font-weight: bold;">
+            <p>Someone does not believe in the destiny, Someone chooses to believe in. There is a girl, Axon, she believes that her princess will come with a sail in red.</p>
+        </div>
+        <div>
+            <img width="100%" height="450px" src="../../images/canhbuomdotham.jpg">
+        </div>
+        <p>Sau khi đã xem 1 trong các bộ phim chuyển thể được xếp vào hàng kinh điển “Cánh buồm đỏ thắm", t nghĩ đến việc đọc lại nó, và thật là không 1 phút hối tiếc.
+            Có vẻ như câu chuyện rất hợp với t, t như sống trong thế giới hão huyền, mộng mơ đó. Một con bé tên Axon (quyển sách của t phiên âm thế, một số bản dịch khác sẽ phiên âm khác) mất mẹ sống cùng cha. Mặc mọi lời gièm pha của dân làng chài nơi bố con Axon sống, mặc cuộc sống dẫu có khó khăn, người cha vẫn dành cho con gái nhỏ những tình cảm đẹp nhất. Ông ấy làm ra những con thuyền đẹp đẽ, chính 1 trong những con thuyền với cánh buồm đỏ thắm đã dẫn Axon có cuộc gặp mặt với ông lão chu du thiên hạ kể những câu chuyện cổ tích. Ông lão đã nói rằng Axon sẽ gặp được người đàn ông của đời mình trên chiếc thuyền đỏ thắm, con bé đã tin. Người cha hẳn cũng tin tưởng, mong muốn con gái gặp được cái định mệnh đó. Cô bé lớn lên luôn ôm ấp hình cảnh con thuyền đó. Axon tin vào những câu chuyện tình có hậu, tin vào tình yêu đích thực, tin vào cái gọi là duyên phận, định mệnh. Và rồi năm tháng qua đi, người ta nghĩ Axon bị làm sao đấy khi quá mộng mơ, còn cô vẫn là cô. Rồi định mệnh đã đến khi người ta có niềm tin. Người thuyền trưởng ấy đã gặp Axon, và anh cũng tin rằng mình chính là nửa kia người đem lại hạnh phúc cho cô gái. Trong thầm lặng, anh chuẩn bị con thuyền của mình với những cánh buồm đỏ thắm, tới đón Axon trong sự bàng hoàng của người dân chốn làng chài. Họ là định mệnh, là tình đầu và cũng là tình cuối của nhau. Great!
+            T nghĩ chính t cũng ảo tưởng như thế, nên t ms hợp với câu chuyện như vậy. Đúng là ko hổ danh thuộc hàng văn học kinh điển.
+            Next: Kiêu hãnh và định kiến, thuyết phục - Jane Austen
+        </p>
+        <div>
+            <img width="100%" height="450px" src="../../images/a-xon.jpg">
+        </div>
+        
+        
+    
+    </article>
+        
+    <aside>
+        <img width="250px" height="250px" src="../../images/Larlia-logo.png">
+    </aside>
+    
+</section> 
+<footer>
+    <div>
+        <img width="100%" height="450px" src="../../images/blog-4.jpg">
+    </div>
+
+</footer>
+
+<script src="../../js/blogitem.js"></script>
+
+  
